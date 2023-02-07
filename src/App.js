@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from './componente/Navbar';
+import ItemListContainer from './componente/ItemListContainer';
+
 
 function App() {
+  const greeting= "Bienvenido a Ingresado al Sitio Correctamente ";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+     <Navbar/>
+     <ItemListContainer greeting={greeting} />
+
+    </>
+  )  
+          
+         
 }
 
 export default App;

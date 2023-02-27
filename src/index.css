@@ -6,11 +6,8 @@
 }
 
 /* Las adaptamos al modo oscuro */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --negro: #ececec;
-  }
-}
+
+
 /* Opcional */
 /* Configuramos si un usuario ha activado el modo alto contraste. (WD) */
 /* Opcional */
@@ -40,10 +37,10 @@ img, picture, video, iframe, figure {
   display: block;
 
   -o-object-fit: cover;
-     object-fit: cover;
+     
   
   -o-object-position: center center;
-     object-position: center center;
+   object-position: center center;
 }
 
 

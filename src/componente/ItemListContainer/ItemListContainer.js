@@ -11,6 +11,7 @@ const ItemListContainer = () => {
   const [products, setProducts] = useState ([]);
   const [error, setError] = useState(false)
   const { name } =useParams();
+  
   const URL = name ? `https://fakestoreapi.com/products/category/${name}`:`https://fakestoreapi.com/products/`;
  
   useEffect(()=>{

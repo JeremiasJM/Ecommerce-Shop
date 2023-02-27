@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/PreEntrega1-JeremiasJuarezMarrades-React/static/css/main.592c8b25.css",
-    "main.js": "/PreEntrega1-JeremiasJuarezMarrades-React/static/js/main.2685f00b.js",
+    "main.css": "/PreEntrega1-JeremiasJuarezMarrades-React/static/css/main.2742ef76.css",
+    "main.js": "/PreEntrega1-JeremiasJuarezMarrades-React/static/js/main.cec010cb.js",
     "static/js/787.72f94a41.chunk.js": "/PreEntrega1-JeremiasJuarezMarrades-React/static/js/787.72f94a41.chunk.js",
     "index.html": "/PreEntrega1-JeremiasJuarezMarrades-React/index.html",
-    "main.592c8b25.css.map": "/PreEntrega1-JeremiasJuarezMarrades-React/static/css/main.592c8b25.css.map",
-    "main.2685f00b.js.map": "/PreEntrega1-JeremiasJuarezMarrades-React/static/js/main.2685f00b.js.map",
+    "main.2742ef76.css.map": "/PreEntrega1-JeremiasJuarezMarrades-React/static/css/main.2742ef76.css.map",
+    "main.cec010cb.js.map": "/PreEntrega1-JeremiasJuarezMarrades-React/static/js/main.cec010cb.js.map",
     "787.72f94a41.chunk.js.map": "/PreEntrega1-JeremiasJuarezMarrades-React/static/js/787.72f94a41.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.592c8b25.css",
-    "static/js/main.2685f00b.js"
+    "static/css/main.2742ef76.css",
+    "static/js/main.cec010cb.js"
   ]
 }

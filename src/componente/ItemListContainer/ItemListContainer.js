@@ -3,7 +3,8 @@ import ItemList from './ItemList';
 import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
 import {useParams} from "react-router-dom";
-
+import {db} from './../../firebase/firebase';
+import {getDocs, collection, query, where} from "firebase/firestore";
  
  
 
@@ -11,25 +12,28 @@ const ItemListContainer = () => {
   const [products, setProducts] = useState ([]);
   const [error, setError] = useState(false)
   const { name } =useParams();
-  
-  const URL = name ? `https://fakestoreapi.com/products/category/${name}`:`https://fakestoreapi.com/products/`;
- 
+
   useEffect(()=>{
-    
-    const getProducts = async () =>{
+    const productsCollection = collection(db,'products');
+    const q=name
+    ? query(productsCollection, where("category", "==", name))
+    : productsCollection;
 
-      try{const res = await fetch(URL)
-      const data = await res.json();
-      setProducts(data);
-    }
-    catch{
-      setError(true);
-    }
-    }
-   
-    getProducts();
-
-  }, [name]);
+    getDocs(q)
+    .then((data)=>{
+        const list = data.docs.map(product => {
+          return{
+            ...product.data(),
+            id:product.id
+          };
+        });
+        setProducts(list);
+      }
+    )
+    .catch(()=>{ 
+      setError(true);})
+  },[name])
+  
 
     return(
         <>
@@ -41,6 +45,7 @@ const ItemListContainer = () => {
             {products.length ? ( 
 
             <ItemList products={products}  />
+            
 
              ) :(  
               <Box style={style.carga} sx={{ width: '100%' }}>

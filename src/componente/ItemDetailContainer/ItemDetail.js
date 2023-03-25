@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import Button from '@mui/material/Button';
 import ItemCount from "../ItemListContainer/ItemCount"
+import { Link } from "react-router-dom";
+import { CustomContext } from "../../context/CustomContext";
+
 
 const ItemDetail =({product} )=>{
+    const[isPressedButton, setIsPressedButton] = useState(false);
+    const {addProduct} = useContext(CustomContext);
+
+    const onAdd=(count)=>{
+        setIsPressedButton(true);
+        addProduct(product,count);
+    }
+
     return(
         <div style={style.conteiner}>
             
@@ -15,12 +26,22 @@ const ItemDetail =({product} )=>{
               
               <p style={style.p}>{product.description} </p>
               <p style={style.p}>Precio: ${product.price} </p>
-              <div style={style.itemCount}>
-              <ItemCount />
-              </div>
+
+              {isPressedButton ?(
+                <Link to="/cart">
+                    <Button style={style.button} variant="outlined">Comprar</Button>
+                </Link>
+              ) :(
+                <div style={style.itemCount}>
+                 <ItemCount onAdd={onAdd}/>
+                 </div>
+              )}
+
+
+             
               
         
-              <Button style={style.button} variant="outlined">Comprar</Button>
+           
            </div> 
 
          </div>

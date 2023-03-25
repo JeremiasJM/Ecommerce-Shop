@@ -1,0 +1,45 @@
+.conteiner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner form{
+    width: auto;
+    margin: 2em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    background: red;
+    border-radius: 10px;
+}
+form label{
+    color: white;
+    font-size: 1.3em;
+}
+form input{
+    color: white;
+    border: solid white;
+    border-radius: 15px;
+    padding: .5em;
+}
+form button{
+    background: skyblue;
+    border: solid skyblue;
+    border-radius: 20px;
+    padding: .5em;
+    color: white;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+.resultid{
+    border: solid indianred;
+    padding: 1em;
+    border-radius: 25px;
+    background: salmon;
+    color: white;
+    
+}

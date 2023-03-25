@@ -1,14 +1,16 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import Badge from '@mui/material/Badge';
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { CustomContext } from '../../context/CustomContext';
 
 
 const CardWiget  = () => {
+  const {totals} = useContext(CustomContext)
     return (
         <IconButton aria-label="cart">
-          <StyledBadge badgeContent={1} style={stlye.white}>
+          <StyledBadge badgeContent={totals.qty > 0 && <p>{totals.qty}</p>} style={stlye.white}>
             <ShoppingCartIcon  />
           </StyledBadge>
         </IconButton>

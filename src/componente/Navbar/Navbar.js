@@ -57,7 +57,7 @@ const style = {
     },
     img :{              
         width: 'auto',
-        height:"88px"
+        height:"80px"
        
         
     },

@@ -19,7 +19,7 @@ function App() {
         <Navbar/>
           <Routes>
 
-            <Route path='/Ecommerce-Shop' element={<ItemListContainer greeting={greeting} />}/>
+            <Route path='/Proyecto-Final-React' element={<ItemListContainer greeting={greeting} />}/>
 
             <Route 
              path='/categories/:name'

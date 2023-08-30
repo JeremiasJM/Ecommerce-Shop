@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
      <header style={style.container}> 
         <div style={style.container1}>
-        <Link to={'/'}>
+        <Link to={'/Proyecto-Final-React'}>
             <img style={style.img} src={logo}  alt="logo tienda" />
         </Link>
             <Input style={style.input} type="search" fullWidth={true} placeholder="Ingrese el Producto" > </Input>   

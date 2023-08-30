@@ -1,15 +1,20 @@
-import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore';
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDJIrmPFkuZLZs6I281SYQEKOom9IOv32g",
-  authDomain: "react-pructos-sells.firebaseapp.com",
-  projectId: "react-pructos-sells",
-  storageBucket: "react-pructos-sells.appspot.com",
-  messagingSenderId: "187735385871",
-  appId: "1:187735385871:web:9d53bdf05cfd942ad5c07a"
+  apiKey: "AIzaSyDRw7fn6GFbmTIYFWSG0nHORDt_YfjJDUc",
+  authDomain: "ecommerce-8c6bc.firebaseapp.com",
+  projectId: "ecommerce-8c6bc",
+  storageBucket: "ecommerce-8c6bc.appspot.com",
+  messagingSenderId: "403162364714",
+  appId: "1:403162364714:web:dd6a8d85348d791283bc53"
 };
 
-
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
+

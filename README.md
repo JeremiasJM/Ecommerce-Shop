@@ -16,5 +16,5 @@ Pasos para reproducirlo en tu local
 
 ## Autor
 --Jeremias Juarez Marrades--
-- [Linkedin] (https://www.linkedin.com/in/jeremias-juarez-marrades-a72415244/)
+- [Linkedin] (https://www.linkedin.com/in/jeremiasjm/)
 - [PortFolio Web] (https://jeremiasjm.github.io/Jeremias-Juarez-Marrades-Portfolio/)
